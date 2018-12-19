@@ -1,4 +1,4 @@
-##express
+## express
 >node的框架 
 1. npm init -y 一键初始化 
 *文件夹的命名不用和框架和包（jq,loadash ）重名 不能用中中文 不要用数字 
