@@ -36,7 +36,6 @@ app.get('/sign',function(req,res){
    //请求头
   res.end('登录')
 })
-
 app.get('/login',function(req,res){
   res.end('第二个')
 })

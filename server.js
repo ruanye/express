@@ -1,12 +1,11 @@
 let express = require('express')
 let app = express();
+let bodyParser = require('body-parser')
 app.listen(3000)
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
 let user = require('./user/user');
+let car =require('./car/car')
 app.use('/user',user);
-//购物车
-app.post('/carlist',function(){
-  res.send('购物车列表')
-})
-app.get('/one',function(){
-  res.send('查找一个商品')
-})
+app.use('/car',car)
+
