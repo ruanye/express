@@ -38,5 +38,13 @@ const instance = axios.create({
    withCredentials:true,
    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 });
+* 静态文件中间件 express内置的  
+ app.use(express.static('public'))
+ public 表示文件夹 会自动使用 public下的文件a
+ 静态文件包括 css js html img 等 
+ 
+ app.use(express.static(__dirname));__dirname 绝对路径 
+
+
 
  
